@@ -87,9 +87,29 @@
                 <hr>
                 <h4>Total: <span id="total" class="float-end">$100.00</span></h4>
                 <button class="btn btn-confirmar w-100">Confirmar</button>
+                <div class="contCalc">
+                    <link id="estilosCalcu" rel="stylesheet" href="Styles/estiloCalc1.css">
+                    <a id="mostCalc" href="#">Mostrar Calculadora</a>
+                    <div id="noCalcu"></div>
+                    <div id="siCalcu" style="display: none;">
+                        <div id="cuerpo">
+                            <div class="calculator">
+                            <div class="display">0</div>
+                                <div class="buttons">
+                                    <button>7</button><button>8</button><button>9</button><button>+</button>
+                                    <button>4</button><button>5</button><button>6</button><button>-</button>
+                                    <button>1</button><button>2</button><button>3</button><button>/</button>
+                                    <button>C</button><button>0</button><button>=</button><button>*</button>
+                                    <button>%</button><button>.</button><button>B</button>
+                                </div>
+                            </div>
+                            <script src="JS/Calcu.js"></script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="JavaScrip/Adicionales.js"></script>
+    <script src="JS/Adicionales.js"></script>
 </body>
 </html>
