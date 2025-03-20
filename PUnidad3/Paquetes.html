@@ -51,7 +51,7 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center;">Diamante 1</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallDiam1" style="margin: 10px;">
                             <li>1 álbum de 10 panorámicas 20x10, 20 lados con diseño personalizado.</li>
                             <li>100 fotografías 4x6 con álbum incluido.</li>
                             <li>20 fotografías 5x7</li>
@@ -59,7 +59,7 @@
                             <li>1 fotografía 16x20 con cuadro incluido</li>
                             <li>Tiempo de sesion: 1 hora</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Diamante 1', '1 álbum de 10 panorámicas 20x10, 100 fotografías 4x6 con álbum incluido, 20 fotografías 5x7, 3 fotografías 11x14, 1 fotografía 16x20 con cuadro incluido, Tiempo de sesion: 1 hora')"> Seleccionar </button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Diamante 1', detalleDeDiam1, '1000', 'Paquete: Foto')"> Seleccionar </button>
                     </p>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center;">Diamante 2 (Panorámico)</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallDiam2" style="margin: 10px;">
                             <li>120 fotografías tamaño 4x6 con albúm</li>
                             <li>20 fotografías 5x7 con 1 mini álbum</li>
                             <li>1 albúm de 15 páginas panorámico tamaño 11x14 con diseño personalizado</li>
@@ -79,7 +79,7 @@
                             <li>150 archivos digitales de uso libre en usb</li>
                             <li>Tiempo de sesion: 2 horas</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Diamante 2', '120 fotografías tamaño 4x6 con albúm, 20 fotografías 5x7 con 1 mini álbum, 1 albúm de 15 páginas panorámico tamaño 11x14 con diseño personalizado, 4 fotografías tamaño 11x14, 1 fotografía tamaño 20x24 montada en base rígida con cuadro, 150 archivos digitales de uso libre en usb, Tiempo de sesion: 2 horas')"> Seleccionar </button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Diamante 2', detalleDeDiam2, '1500', 'Paquete: Foto')"> Seleccionar </button>
                     </p>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center;">Diamante 3 (Plus)</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallDiam3" style="margin: 10px;">
                             <li>120 fotografías tamaño 5x7 con caja de madera artesanal personalizada</li>
                             <li>1 albúm de 15 páginas panorámico tamaño 12x16 con diseño personalizado y portada de acrílico</li>
                             <li>5 fotografías tamaño 11x14</li>
@@ -100,7 +100,7 @@
                             <li>250 archivos digitales de uso libre en usb</li>
                             <li>Tiempo de sesion: 3 horas</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Diamante 3 Plus', '120 fotografías tamaño 5x7 con caja de madera artesanal personalizada, 1 albúm de 15 páginas panorámico tamaño 12x16 con diseño personalizado y portada de acrílico, 5 fotografías tamaño 11x14, 1 fotografía tamaño 16x20 con cuadro incluido (a elegir), Sesión previa al evento, 1 fotografía tamaño 20x24 impresa en formato canvas, 250 archivos digitales de uso libre en usb, Tiempo de sesion: 3 horas.')">Seleccionar</button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Diamante 3 Plus', detalleDeDiam3, '2100', 'Paquete: Foto')">Seleccionar</button>
                     </p>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center;">Paquete ensueño</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallEnsue" style="margin: 10px;">
                             <li>01 álbum de 15 páginas panorámicas tamaño 12x36" con diseño personalizado y portada de acrílico</li>
                             <li>120 fotografías tamaño 5x7" con álbum con caja de madera artesanal personalizada</li>
                             <li>01 mini álbum incrustado</li>
@@ -122,7 +122,7 @@
                             <li>Todos los archivos digitales uso libre en USB</li>
                             <li>Tiempo de sesion: 3 horas</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Paquete ensueño', '01 álbum de 15 páginas panorámicas tamaño 12x36 con diseño personalizado y portada de acrílico, 120 fotografías tamaño 5x7 con álbum con caja de madera artesanal personalizada, 01 mini álbum incrustado, 01 fotografía tamaño 20x24 con cuadro incluido o canvas, Sesión previa al evento, 01 fotografía tamaño 20x24 impresa en formato canvas, Video shortfilm 15-20 minutos, Todos los archivos digitales uso libre en USB, Tiempo de sesion: 3 horas')">Seleccionar</button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Paquete ensueño', detalleDeEnsue, '3500', 'Paquete: Foto')">Seleccionar</button>
                     </p>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center;">Video Cinematográfico</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallCinem" style="margin: 10px;">
                             <li>Un USB que contienen el video original en calidad HD</li>
                             <li>2 estilos de ediciones: Short film 15-20 min y escenas extras del evento long film 1:30 hrs</li>
                             <li>Servicio de cámaras HD de alta gama</li>
@@ -145,7 +145,7 @@
                             <li>Herramientas cinematográficas: riel estabilizador, variedad de lentes y micrófono inalámbrico</li>
                             <li>Tiempo de sesion: 1 hora 30 minutos</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Video Cinematográfico','Un USB que contienen el video original en calidad HD,2 estilos de ediciones: Short film 15-20 min y escenas extras del evento long film 1:30 hrs,Servicio de cámaras HD de alta gama, Mayor detalle y cantidad de escenas grabadas por dos videografos en estilo cinematográfico, Herramientas cinematográficas: riel estabilizador,variedad de lentes y micrófono inalámbrico, Tiempo de sesion: 1 hora 30 minutos')">Seleccionar</button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Video Cinematográfico', detalleDeCinem,'1800', 'Paquete: Video')">Seleccionar</button>
                     </p>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center;">Producción Estrella</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallEstre" style="margin: 10px;">
                             <li>1 USB que contiene el video original en calidad HD.</li>
                             <li>2 estilos de ediciones: Short Film 15-20 min y escenas extras del evento Long Film 1:30 hrs.</li>
                             <li>Video trailer 1-2 minutos</li>
@@ -168,7 +168,7 @@
                             <li>Álbum estrella (digital)</li>
                             <li>Tiempo de sesion: 3 horas</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Producción Estrella','1 USB que contiene el video original en calidad HD, 2 estilos de ediciones: Short Film 15-20 min y escenas extras del evento Long Film 1:30 hrs, Video trailer 1-2 minutos, Servicio de cámaras HD de alta gama, Mayor detalle y cantidad de escenas grabadas por dos videógrafos en estilo cinematográfico, Herramientas cinematográficas: riel estabilizador, variedad de lentes y micrófono inalámbrico,Drone,Producción de foto animada,Álbum estrella,Tiempo de sesion: 3 horas')">Seleccionar</button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Producción Estrella', detalleDeEstre, '3400', 'Paquete: Video')">Seleccionar</button>
                     </p>
                 </div>
             </div>
@@ -179,14 +179,14 @@
                 <div class="card-body" style="background-color: rgb(255, 179, 61); border-radius: 8px;">
                     <h5 class="card-title" style="text-align: center; ">Videos Conceptuales</h5>
                     <p class="card-text">
-                        <ul style="margin: 10px;">
+                        <ul id="detallConce" style="margin: 10px;">
                             <li>Video short film 15-20 minutos</li>
                             <li>Video tradicional 60 minutos</li>
                             <li>Video teaser highligth de 3-5 minutos</li>
                             <li>Video trailer 1-2 minutos para compartir en social media</li>
                             <li>Tiempo de sesion: 4 horas</li>
                         </ul>
-                        <button class="btn btn-primary" onclick="seleccionarPaquete('Videos Conceptuales','Video short film 15-20 minutos,Video tradicional 60 minutos,Video teaser highligth de 3-5 minutos,Video trailer 1-2 minutos para compartir en social media,Tiempo de sesion: 4 horas')">Seleccionar</button>
+                        <button class="btn btn-primary" onclick="seleccionarPaquete('Videos Conceptuales', detalleDeConce, '400', 'Paquete: Video')">Seleccionar</button>
                     </p>
                 </div>
             </div>

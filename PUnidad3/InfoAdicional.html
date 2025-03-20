@@ -87,7 +87,7 @@
             </div>
             <div class="col-md-5 detalle-compra">
                 <h4>Detalle de Compra</h4>
-                <p>Paquete: Bodas <span class="float-end">$100.00</span></p>
+                <p><span id="paquete-tipo"></span><span class="float-end">$<i id="paquete-precio"></i> dlls</span></p>
                 <p>Tiempo extra: <input type="number" id="extraHoras" value="0" min="0" class="w-25" onchange="actualizarTotal()"> horas <span class="float-end">$10.00 cada hora</span></p>
                 <p>Fotos adicionales: <input type="number" id="fotosAdicionales" value="0" min="0" class="w-25" onchange="actualizarTotal()"> <span class="float-end">$10.00 cada foto</span></p>
                 <p>Videos adicionales: <input type="number" id="videosAdicionales" value="0" min="0" class="w-25" onchange="actualizarTotal()"> <span class="float-end">$10.00 cada video</span></p>
@@ -124,9 +124,13 @@
     // Recuperar datos del localStorage
     const paqueteNombre = localStorage.getItem('paqueteNombre');
     const paqueteDetalles = localStorage.getItem('paqueteDetalles');
+    const paquetePrecio = localStorage.getItem('paquetePrecio');
+    const paqueteTipo = localStorage.getItem('paqueteTipo');
 
     // Mostrar en la página usando los IDs correctos
     document.getElementById('paquete-nombre').textContent = paqueteNombre || 'No hay paquete seleccionado.';
     document.getElementById('paquete-detalles').textContent = paqueteDetalles || '';
+    document.getElementById('paquete-precio').textContent = paquetePrecio || '';
+    document.getElementById('paquete-tipo').textContent = paqueteTipo || '';
 </script>
 </html>
