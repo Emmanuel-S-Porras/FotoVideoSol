@@ -1,0 +1,12 @@
+document.getElementById('ticketNombrePaquete').textContent = localStorage.getItem('paqueteNombre');
+document.getElementById('ticketDetallePaquete').textContent = localStorage.getItem('paqueteDetalles');
+document.getElementById('ticketNombre').textContent = localStorage.getItem('SNombre');
+document.getElementById('ticketApellido').textContent = localStorage.getItem('SApellido');
+document.getElementById('ticketCorreo').textContent = localStorage.getItem('SCorreo');
+document.getElementById('ticketFecha').textContent = localStorage.getItem('SFecha');
+document.getElementById('ticketHoraEvento').textContent = localStorage.getItem('SHoraEvento');
+document.getElementById('ticketDireccion').textContent = localStorage.getItem('SDireccion');
+document.getElementById('ticketComentario').textContent = localStorage.getItem('SComentario');
+document.getElementById('extraHoras').textContent = localStorage.getItem('SExtraHoras');
+document.getElementById('fotosAdicionales').textContent = localStorage.getItem('SFotosAdd');
+document.getElementById('videosAdicionales').textContent = localStorage.getItem('SVideosAdd');

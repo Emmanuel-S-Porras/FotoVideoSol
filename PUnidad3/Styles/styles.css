@@ -175,3 +175,108 @@ form .btn-warning:hover {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Styles del carrito */
+.container-carrito {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+.titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.paquete {
+    border-top: 1px solid black;
+    padding: 20px 0;
+}
+.paquete:last-child {
+    border-bottom: 1px solid black;
+}
+.paquete-titulo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.extras, .detalles, .precio {
+    margin-top: 10px;
+}
+.extras ul {
+    list-style: none;
+    padding-left: 0;
+}
+.extras ul li::before {
+    content: "· ";
+}
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-pagar {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.precio-final {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+/* Styles del Ticket */
+.ticket-container {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 2px solid orange;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.ticket-logo img {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 80px;
+}
+.ticket-title {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.ticket-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.ticket-content {
+    margin-bottom: 20px;
+}
+.extras-table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.extras-table th, .extras-table td {
+    padding: 5px;
+    text-align: left;
+}
+.extras-table td:last-child, .extras-table th:last-child {
+    text-align: right;
+}
+.total {
+    font-weight: bold;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+}
+.qr-section {
+    text-align: center;
+    margin-top: 15px;
+}
+.qr-section p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.navbar {
+    border-bottom: 2px solid orange;
+}
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
