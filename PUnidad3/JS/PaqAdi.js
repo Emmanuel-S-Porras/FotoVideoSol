@@ -14,3 +14,23 @@ detalleDeEnsue = document.getElementById('detallEnsue').textContent;
 detalleDeCinem = document.getElementById('detallCinem').textContent;
 detalleDeEstre = document.getElementById('detallEstre').textContent;
 detalleDeConce = document.getElementById('detallConce').textContent;
+function agregarAlCarrito(nombre, detalles, precio, tipo) {
+    // Crear objeto con la info del paquete
+    const paquete = {
+        nombre: nombre,
+        detalles: detalles,
+        precio: precio,
+        tipo: tipo
+    };
+
+    // Recuperar carrito existente o crear uno vacío
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    // Agregar nuevo paquete al carrito
+    carrito.push(paquete);
+
+    // Guardar carrito actualizado
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    alert(`${nombre} añadido al carrito`);
+}
