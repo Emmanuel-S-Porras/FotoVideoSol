@@ -56,33 +56,33 @@
                 <form>
                     <div class="mb-3">
                         <label>Nombre</label>
-                        <input type="text" class="form-control">
+                        <input id= "ticketNombre" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Apellido</label>
-                        <input type="text" class="form-control">
+                        <input id= "ticketApellido" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Correo Electrónico</label>
-                        <input type="email" class="form-control">
+                        <input id= "ticketCorreo" type="email" class="form-control">
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label>Fecha del Evento</label>
-                            <input type="date" class="form-control">
+                            <input id= "ticketFecha" type="date" class="form-control">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Hora del Evento</label>
-                            <input type="time" class="form-control">
+                            <input id= "ticketHoraEvento" type="time" class="form-control">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label>Dirección del Evento</label>
-                        <input type="text" class="form-control">
+                        <input id= "ticketDireccion" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label>Comentarios Adicionales</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea id= "ticketComentario" class="form-control"></textarea>
                     </div>
                 </form>
             </div>
@@ -93,9 +93,9 @@
                 <p>Fotos adicionales: <input type="number" id="fotosAdicionales" value="0" min="0" class="w-25" onchange="actualizarTotal()"> <span class="float-end">$10.00 cada foto</span></p>
                 <p>Videos adicionales: <input type="number" id="videosAdicionales" value="0" min="0" class="w-25" onchange="actualizarTotal()"> <span class="float-end">$10.00 cada video</span></p>
                 <hr>
-                <h4>Total: <span id="total" class="float-end">$100.00</span></h4>
+                <h4>Total: <span id="total" class="float-end">$1000.00</span></h4>
                 <a href="Ticket.html">
-                <button class="btn btn-confirmar w-100">Confirmar</button></a>
+                    <button class= "btn btn-confirmar w-100" onclick="confirmarPaquete()"> Confirmar </button></a>
                 <div class="contCalc">
                     <link id="estilosCalcu" rel="stylesheet" href="Styles/estiloCalc1.css">
                     <a id="mostCalc" href="#">Mostrar Calculadora</a>
@@ -120,6 +120,7 @@
         </div>
     </div>
     <script src="JS/Adicionales.js"></script>
+    <script src="JS/Ticket.js"></script>
 </body>
 <script>
     // Recuperar datos del localStorage
