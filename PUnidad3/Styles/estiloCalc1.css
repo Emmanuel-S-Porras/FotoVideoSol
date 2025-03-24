@@ -1,12 +1,11 @@
 /* estiloCalc1.css */
 div#cuerpo {
     font-family: Arial, sans-serif;
-    background-color: blanchedalmond;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 10px;
 }
 
 .calculator {
@@ -50,8 +49,4 @@ button {
 button:hover {
     background-color: yellow;
     font-weight: bold;
-}
-.aleat {
-    color: green;
-    background-color: palevioletred;
 }
