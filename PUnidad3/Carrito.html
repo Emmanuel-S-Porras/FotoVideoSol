@@ -44,19 +44,24 @@
         </div>
     </nav>
     <div style="background-color: whitesmoke; opacity: 90%; padding: 10px;">
-    <div id="contenedor-carrito" class="container container-carrito"></div>
+        <div id="contenedor-carrito" class="container container-carrito"></div>
+        <div class="text-center mt-3">
+            <button class="btn btn-warning me-2" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <button class="btn btn-success" onclick="pagarTodo()">Pagar Todo</button>
+        </div>
+    </div>
     <script>
         function cargarCarrito() {
             const contenedor = document.getElementById('contenedor-carrito');
             contenedor.innerHTML = ''; // Limpia el contenedor
-    
+
             let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    
+
             if (carrito.length === 0) {
                 contenedor.innerHTML = `<h3 class="text-center">Tu carrito está vacío</h3>`;
                 return;
             }
-    
+
             carrito.forEach((paquete, index) => {
                 contenedor.innerHTML += `
                 <div class="paquete mb-4">
@@ -65,7 +70,6 @@
                             <div class="paquete-titulo">${paquete.nombre}</div>
                             <div class="detalles">${paquete.detalles.replace(/\n/g, "<br>")}</div>
                         </div>
-                        
                         <div class="col-md-4 precio">
                             <div>
                                 ${paquete.nombre} &nbsp;&nbsp;&nbsp; $${paquete.precio}<br>
@@ -74,7 +78,6 @@
                                 Videos adicionales &nbsp;&nbsp;&nbsp; $0
                             </div>
                             <div class="mt-2">
-                                <button class="btn-pagar">PAGAR</button>
                                 <button class="btn btn-danger btn-sm ms-2" onclick="eliminarPaquete(${index})">Eliminar</button>
                                 <div class="precio-final mt-1">Total: $${paquete.precio}</div>
                             </div>
@@ -82,7 +85,6 @@
                     </div>
                 </div>`;
             });
-            contenedor.innerHTML += `<div class="text-center"><button class="btn btn-warning" onclick="vaciarCarrito()">Vaciar Carrito</button></div>`;
         }
         function eliminarPaquete(index) {
             let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -96,9 +98,17 @@
                 cargarCarrito();
             }
         }
+        function pagarTodo() {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            if (carrito.length === 0) {
+                alert("Tu carrito está vacío.");
+                return;
+            }
+            // Redirigir a InfoAdicional2.html
+            window.location.href = 'InfoAdicional2.html';
+        }
         // Cargar al inicio
         window.onload = cargarCarrito;
-    </script>    
-</div>
+    </script>
 </body>
 </html>
