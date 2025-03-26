@@ -1,5 +1,5 @@
 // Mostrar los paquetes seleccionados
-const paquetes = JSON.parse(localStorage.getItem('paquetesParaInfo2')) || [];
+const paquetes = JSON.parse(localStorage.getItem('carrito')) || [];
 const contenedor = document.getElementById('lista-paquetes');
 let precioBase = 0;
 let tipoPaquete = '';
