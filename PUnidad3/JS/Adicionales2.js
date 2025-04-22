@@ -53,6 +53,5 @@ function confirmarPaquete() {
   localStorage.setItem('SFotosAdd', document.getElementById("fotosAdicionales").value);
   localStorage.setItem('SVideosAdd', document.getElementById("videosAdicionales").value);
   alert('¡Paquete confirmado!');
-  // Aquí puedes redirigir al Ticket.html si gustas
   window.location.href = 'Ticket2.html';
 }
